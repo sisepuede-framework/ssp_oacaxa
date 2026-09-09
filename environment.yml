@@ -1,0 +1,14 @@
+name: ssp_oaxaca
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - matplotlib=3.9.2
+  - xlsxwriter=3.1.1
+  - ipykernel=6.29.5
+  - pip
+  - pip:
+      - git+https://github.com/jcsyme/sisepuede.git
+      - ssp-transformations-handler==0.1.8
+      - git+https://github.com/sisepuede-framework/costs_benefits_ssp.git
+      - polars

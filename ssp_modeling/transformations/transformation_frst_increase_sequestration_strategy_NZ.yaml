@@ -1,0 +1,12 @@
+citations: null
+description: Increase the sequestration factor of secondary forests (agroforestry,
+  assisted natural regeneration, improved silviculture).
+identifiers:
+  transformation_code: "TX:FRST:INCREASE_SEQUESTRATION_STRATEGY_NZ"
+  transformation_name: "Scaled Default Max Parameters by 3.0 - LNDU: Increase Sequestration"
+parameters:
+  cats_frst: null
+  magnitude: 0.15000000000000002
+  vec_implementation_ramp:
+    tp_0_ramp: 10
+transformer: "TFR:FRST:INCREASE_SEQUESTRATION"

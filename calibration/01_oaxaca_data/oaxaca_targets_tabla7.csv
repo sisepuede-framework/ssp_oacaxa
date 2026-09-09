@@ -1,0 +1,43 @@
+ipcc_code,categoria,ssp_subsector,co2_kt,ch4_kt,n2o_kt,hfc_kt,total_kt,level,notes
+1,Energía,entc+fgtv+inen+trns+scoe,8179,194,104,,8476,category,"Suma de 1A1+1A2+1A3+1A4+1B"
+1A1,Industrias de la energía,entc,3673,3,5,,3681,subcategory,"Íntegramente refinación; NO hay renglón 1A1a generación eléctrica"
+1A1b,Refinación del petróleo,entc,3673,3,5,,3681,item,"Refinería Salina Cruz (PEMEX) -> ENTC fp_petroleum_refinement"
+1A2,Industrias manufactureras y de construcción,inen,603,13,20,,636,subcategory,
+1A2c,Sustancias químicas,inen,,,,,1,item,"Valor de CO2 ilegible en el PDF; total 1"
+1A2d,"Pulpa, papel e imprenta",inen,149,,,,149,item,
+1A2e,"Procesamiento de alimentos, bebidas y tabaco",inen,62,13,18,,93,item,
+1A2f,Minerales no metálicos,inen,391,,,,392,item,
+1A2j,Madera y productos de la madera,inen,,,,,0,item,"Celdas vacías en el PDF; ~0"
+1A2m,Ladrilleras,inen,,,,,1,item,
+1A3,Transporte,trns,3566,28,47,,3641,subcategory,
+1A3a,Aviación,trns,212,,,,212,item,
+1A3b,Transporte terrestre,trns,3069,27,43,,3139,item,"Dominante dentro de transporte"
+1A3c,Ferrocarriles,trns,12,,1,,13,item,
+1A3d,Navegación marítima y fluvial,trns,2,,,,2,item,
+1A3eiii_constr,Maquinaria de construcción,trns,9,,,,9,item,
+1A3eiii_agri,Tractores y maquinaria agrícola,trns,261,1,2,,264,item,
+1A4,Otros sectores,scoe,337,132,31,,501,subcategory,
+1A4a,Combustión Comercial/Institucional,scoe,49,,,,49,item,
+1A4b_glp,Combustión Residencial de GLP,scoe,287,,,,287,item,
+1A4b_lena,Combustión Residencial de leña,scoe,,131,31,,162,item,"CO2 = NA (biomasa); solo CH4 y N2O"
+1A4b_agri,Combustión Agrícola,scoe,2,,,,2,item,
+1B,Emisiones fugitivas,fgtv,,17,,,17,subcategory,
+1B2aiii.4,Refinación del petróleo,fgtv,,17,,,17,item,"CH4 fugitivo de refinación"
+2,Procesos industriales y uso de productos,ippu,749,,,93,842,category,
+2A1,Producción de cemento,ippu,749,,,,749,item,
+2F1,Refrigeración y aire acondicionado (HFC),ippu,,,,93,93,item,
+3,AFOLU,lvst+lsmm+soil+agrc+lndu,2447,3278,2271,,7996,category,"44% del total estatal"
+3A1,Fermentación entérica,lvst,,2627,,,2627,item,
+3A2,Manejo de estiércol,lsmm,,312,106,,418,item,
+3C1a_forestal,Quemado de biomasa en tierras forestales,lndu,1143,78,44,,1265,item,"Ruteo lndu vs frst por confirmar empíricamente"
+3C1a_cultivo,Quemado de biomasa en tierras de cultivo,agrc,1304,193,60,,1557,item,"Ruteo agrc vs lndu por confirmar empíricamente"
+3C4,Emisiones directas de N2O de los suelos gestionados,soil,,,1862,,1862,item,
+3C5,Emisiones indirectas de N2O de los suelos gestionados,soil,,,199,,199,item,
+3C7,Cultivo de arroz,agrc,,68,,,68,item,
+4,Desechos,waso+trww,,589,65,,654,category,
+4A,Eliminación de desechos sólidos,waso,,242,,,242,item,
+4D1,Tratamiento y eliminación de aguas residuales domésticas,trww,,212,65,,276,item,
+4D2,Tratamiento y eliminación de aguas residuales industriales,trww,,136,,,136,item,
+TOTAL_IPCC,Emisiones de las categorías IPCC,ALL,11375,4060,2440,93,17968,total,"GATE: objetivo de validación ±10%"
+INDIRECTA_ELEC,Emisiones indirectas por consumo de energía eléctrica,MEMO,1216,1,5,,1223,memo,"Scope 2 - NO se modela como emisión territorial (D2)"
+BRUTA,Emisión bruta,MEMO,12591,4061,2445,93,19191,memo,"IPCC + indirectas; solo referencia"

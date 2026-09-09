@@ -1,0 +1,11 @@
+citations: null
+description: Increase the sequestration factor of secondary forests (agroforestry,
+  assisted natural regeneration, improved silviculture).
+identifiers:
+  transformation_code: TX:FRST:INCREASE_SEQUESTRATION
+  transformation_name: 'Default Value - FRST: Increase forest sequestration'
+parameters:
+  cats_frst: null
+  magnitude: 0.05
+  vec_implementation_ramp: null
+transformer: TFR:FRST:INCREASE_SEQUESTRATION

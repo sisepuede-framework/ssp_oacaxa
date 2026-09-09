@@ -1,0 +1,12 @@
+# country_name = etiqueta de REGION de SISEPUEDE. DEBE ser "mexico": es la unica
+# region que el modelo reconoce (attribute_region no incluye "oaxaca"). Los datos
+# estan calibrados a Oaxaca; el postprocesamiento reetiqueta la salida a "oaxaca".
+country_name: "mexico"
+ssp_input_file_name: "sisepuede_adj_inputs_OAX.csv"
+ssp_transformation_cw: "ssp_oaxaca_transformation_strategy.xlsx"
+set_lndu_reallocation_factor_to_zero: true
+energy_model_flag: true
+# Eje temporal: time_period 0 = 2013 (ano base del inventario, Tabla 7 PECC Oaxaca)
+base_year: 2013
+run_y0: 2013
+run_y1: 2060

@@ -1,0 +1,12 @@
+citations: null
+description: Increase OR Decrease exports of fuels
+identifiers:
+  transformation_code: "TX:ENFU:ADJ_EXPORTS_STRATEGY_NZ"
+  transformation_name: "Scaled Default Max Parameters by 0.25 - ENFU: Increase fuel\
+    \ exports"
+parameters:
+  magnitude: 0.2
+  magnitude_type: baseline_scalar
+  vec_implementation_ramp:
+    tp_0_ramp: 10
+transformer: "TFR:ENFU:ADJ_EXPORTS"

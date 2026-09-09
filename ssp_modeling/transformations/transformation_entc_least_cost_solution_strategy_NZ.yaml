@@ -1,0 +1,11 @@
+citations: null
+description: Missing
+identifiers:
+  transformation_code: TX:ENTC:LEAST_COST_SOLUTION_STRATEGY_NZ
+  transformation_name: 'Default Value - ENTC: Least cost solution [NZ]'
+parameters:
+  acceleration_factor: 2.0
+  drop_frac_elec_increase_for_msp: true
+  vec_implementation_ramp:
+    tp_0_ramp: 10
+transformer: TFR:ENTC:LEAST_COST_SOLUTION

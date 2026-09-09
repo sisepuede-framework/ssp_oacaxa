@@ -1,0 +1,21 @@
+citations: null
+description: 'EDICION MANUAL. Este transformer no expone la clave `magnitude`, asi
+  que TransformationYamlProcessor cae en la rama ''special case'' y NO regenera este
+  archivo desde la columna strategy_NZ del Excel: la magnitud vive aqui. Reduccion
+  del factor de emision de fermentacion enterica de 80% en todos los rumiantes (default:
+  40% bovinos / 56% ovicaprinos).'
+identifiers:
+  transformation_code: TX:LVST:DEC_ENTERIC_FERMENTATION_STRATEGY_NZ
+  transformation_name: 'Scaled Default Max Parameters by 1.0 - LVST: Reduce enteric
+    fermentation'
+parameters:
+  dict_lvst_reductions:
+    buffalo: 0.8
+    cattle_dairy: 0.8
+    cattle_nondairy: 0.8
+    goats: 0.8
+    sheep: 0.8
+  return_reductions_dict: false
+  vec_implementation_ramp:
+    tp_0_ramp: 10
+transformer: TFR:LVST:DEC_ENTERIC_FERMENTATION
