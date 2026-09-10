@@ -189,7 +189,8 @@ ssp_modeling/ssp_run_output/
 # Claude Code internals
 *claude/
 CLAUDE.md
-
+calibration/
+docs/
 
 # Ignore Tableau backup files
 .~*.twbx
